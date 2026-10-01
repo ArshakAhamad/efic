@@ -1,0 +1,43 @@
+{
+    "name": "EFIC Wings",
+    "short_name": "EFIC Wings",
+    "description": "EFIC Wings is the progressive web app that delivers student, staff, and admin dashboards for the Effulgent Forum of Independent Committee in Kalmunai, Sri Lanka.",
+    "lang": "en",
+    "display": "standalone",
+    "orientation": "any",
+    "background_color": "#ffffff",
+    "theme_color": "#0071BC",
+    "categories": [
+        "education",
+        "productivity",
+        "community"
+    ],
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "/apple-touch-icon.png",
+            "sizes": "180x180",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "Open Wings",
+            "short_name": "Wings",
+            "description": "Launch the EFIC Wings experience",
+            "url": "/wings"
+        }
+    ]
+}

@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    font-family: 'Poppins', sans-serif;
+    -webkit-touch-callout: none;
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    -webkit-touch-callout: none;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Disable text selection/copy across site content. */
+body,
+body * {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+/* Keep expected interactive cursors for controls. */
+a,
+button,
+[role="button"],
+label {
+    cursor: pointer;
+}
+
+/* Keep text entry fields usable. */
+input,
+textarea,
+select,
+[contenteditable="true"] {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+    cursor: text;
+}
+
+
+.forgot-pasword {
+    color: aliceblue !important;
+}
+
+@media (max-width: 600px) {
+    .mt-on-600 {
+        margin-top: 2rem;
+        /* or whatever value you want */
+    }
+}
+
+/* In your global.css or App.css */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.7;
+    }
+
+    50% {
+        transform: translateY(-20px) rotate(10deg);
+        opacity: 1;
+    }
+}
+
+.float-animation {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #0071BC, #39B54A);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #005a9c, #2d943d);
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.animate-shimmer {
+    animation: shimmer 2s infinite;
+}
+
+
+/* hide number spinners for input type number */
+/* Hide number input arrows */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+    /* Firefox */
+}
+
+/* Reusable fixed-size icon-only control to prevent flex/grid shrinking. */
+.icon-btn-fixed {
+    flex: 0 0 auto;
+    flex-shrink: 0;
+    min-width: 2rem;
+    min-height: 2rem;
+    max-width: 2rem;
+    max-height: 2rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
